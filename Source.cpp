@@ -6,13 +6,6 @@
 
 using namespace std;
 
-//  На основі контейнера list побудувати однозв’язні кільцеві 
-//  списки цілих чисел та символьних рядків.
-//  Виконати операції занесення елемента до 
-//  списку, вилучення елемента зі списку, 
-//  виведення елементів списку на екран, 
-//  визначення кількості елементів списку.
-
 template <typename T>
 class MyList
 {
@@ -99,7 +92,7 @@ public:
 
     ofstream& operator << (ofstream& fs)
     {
-        fs << '\n' << "Запиc у файл!" << '\n';
+        fs << '\n' << "Г‡Г ГЇГЁc Гі ГґГ Г©Г«!" << '\n';
         for (auto it : List)
         {
             fs << it << endl;
@@ -190,32 +183,3 @@ auto MyList<T>::Index(int _index)
     }
     return it;
 }
-
-
-
-
-
-//
-//
-//#include <iostream>
-//#include <list>
-//#include <algorithm>
-//#include <fstream>
-//#include <string>
-//
-//using namespace std;
-//
-//int main()
-//{
-//	list<string> MyList = { "danya loh","max loh","yura loh"};
-//	
-//	MyList.push_back("beninging");
-//	MyList.push_front("pidaras");
-//	MyList.sort();
-//
-//	for (auto it = MyList.begin(); it != MyList.end(); it++)
-//	{
-//		cout << *it << endl;
-//	}
-//
-//}
